@@ -1,23 +1,193 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  display: block; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+body {
+  font-family: 'Noto Sans TC', 'Roboto' , -apple-system, BlinkMacSystemFont,  "PingFang TC", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000; }
+
+.container {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 0  36px; }
+
+h2 {
+  font-size: 64px;
+  font-weight: 700; }
+
+h3 {
+  font-size: 48px;
+  font-weight: 700; }
+
+h4 {
+  font-size: 42px;
+  font-weight: 500; }
+
+h5 {
+  font-size: 24px;
+  font-weight: 700; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.text-center {
+  text-align: center; }
+
+.logo a {
+  display: block;
+  width: 80px;
+  height: 48.57px;
+  background-image: url(../images/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-decoration: none;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  padding: 16px 0px; }
+
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+header {
+  background-color: #AA0601; }
+
+.nav__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px; }
+  .nav__content li {
+    padding-right: 64px; }
+    .nav__content li:nth-last-child(1) {
+      padding-right: 0px; }
+  .nav__content .nav__link {
+    color: #fff;
+    padding: 24px 0px; }
+    .nav__content .nav__link:hover {
+      color: #FBF2F2; }
+
+.banner {
+  background-image: url(../images/home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 787px; }
+
+.btn__primary {
+  color: #fff;
+  background-color: #AA0601;
+  border: none;
+  padding: 0; }
+
+.banner__text {
+  color: #650300;
+  text-align: right;
+  padding-top: 296px; }
+  .banner__text .banner__subTitle {
+    font-size: 36px; }
+  .banner__text .btn__buy {
+    padding: 6px 12px;
+    font-size: 20px; }
+
+.pro {
+  background-color: #FBF2F2;
+  padding: 80px 0px;
+  color: #650300; }
+  .pro .pro__title {
+    margin-bottom: 24px; }
+
+.pro__list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.pro__item {
+  width: calc((100% - (24px*3)) / 4); }
+  .pro__item img {
+    width: 100px;
+    padding: 8px;
+    margin: 0 auto;
+    margin-bottom: 16px; }
+  .pro__item p {
+    color: #000; }
+  .pro__item h5 {
+    margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+  .pro {
+    padding-bottom: 56px; }
+  .pro__item {
+    width: calc((100% - (24px*1)) / 2);
+    margin-bottom: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
