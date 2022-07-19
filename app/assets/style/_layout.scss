@@ -1,0 +1,43 @@
+.logo{
+    a{
+      display: block;
+      width: 80px;
+      height: 48.57px;
+      background-image: url(../images/logo-white.png);
+      background-repeat: no-repeat;
+      background-size: 100% ;
+      text-decoration: none;
+      overflow: hidden;
+      // 文字縮排到圖片外
+      text-indent: 101%;
+      white-space: nowrap;
+      padding: 16px 0px;
+    }
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+    background-color: $primary;
+  }
+  .nav__content{
+    display: flex;
+    font-size: 20px;
+    li{
+        padding-right: 64px;
+        &:nth-last-child(1){
+            padding-right: 0px;
+        }
+      
+    }
+    .nav__link{
+            color:$white;
+            padding: 24px 0px;  
+            &:hover{
+                color:$bg-secondary;
+            }
+        
+    }
+}

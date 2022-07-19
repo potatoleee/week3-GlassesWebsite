@@ -6,17 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <h1><a href="index.html" title="Glasses">Glassesddddd</a></h1>
+      </div>
+        <ul class="nav__content">
+          <li><a class="nav__link" href="frames.html">系列鏡框</a></li>
+          <li><a class="nav__link" href="store.html">門市據點</a></li>
+          <li><a class="nav__link" href="blog.html">部落格</a></li>
+          <li><a class="nav__link" href="faq.html">常見問題</a></li>
+        </ul>
+    </nav>
   </header>
 
   <%- contents %>
 
-  <footer class="footer">
+  <footer>
     footer
   </footer>
   <script src="./assets/js/vendors.js"></script>

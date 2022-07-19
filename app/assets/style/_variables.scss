@@ -1,0 +1,48 @@
+$primary:#AA0601;
+$primary-dark:#650300;
+$bg-secondary:#FBF2F2;
+$black-900:#000;
+$black-500:#707070;
+$white:#fff;
+$shadow-color:rgba(0, 0, 0, 0.16);
+
+
+body{
+    font-family: 'Noto Sans TC', 'Roboto' , -apple-system, BlinkMacSystemFont,  "PingFang TC", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color:$black-900;
+
+}
+
+.container{
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 0  36px;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 700;
+}
+h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 42px;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.d-flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
