@@ -5,7 +5,7 @@ $black-900:#000;
 $black-500:#707070;
 $white:#fff;
 $shadow-color:rgba(0, 0, 0, 0.16);
-
+$spacer:1rem;
 
 body{
     font-family: 'Noto Sans TC', 'Roboto' , -apple-system, BlinkMacSystemFont,  "PingFang TC", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -21,28 +21,69 @@ body{
     padding: 0  36px;
 }
 
+.container__contact{
+    max-width: 708px;
+
+}
+
 h2{
     font-size: 64px;
     font-weight: 700;
+   
 }
 h3{
     font-size: 48px;
     font-weight: 700;
+   
 }
 
 h4{
     font-size: 42px;
     font-weight: 500;
+    
 }
-
 h5{
     font-size: 24px;
     font-weight: 700;
 }
-
+.font-italic{
+    font-style: italic;
+}
 .d-flex{
     display: flex;
 }
+.jcsb{
+    justify-content: space-between;
+}
 .text-center{
     text-align: center;
+}
+
+.mb-1{
+    margin-bottom: $spacer*.25;
+}
+.mb-2{
+    margin-bottom: $spacer*0.5;
+}
+.mb-3{
+    margin-bottom: $spacer;
+}
+.mb-4{
+    margin-bottom: $spacer*1.5;
+}
+.mb-5{
+    margin-bottom: $spacer*2;
+}
+.mb-6{
+    margin-bottom: $spacer*3;
+}
+.mb-7{
+    margin-bottom: $spacer*3.5;
+}
+
+.btn__primary{
+    color:$white;
+    background-color: $primary;
+    border: none;
+    padding: 0;
 }
