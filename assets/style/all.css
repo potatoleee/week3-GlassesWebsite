@@ -68,6 +68,9 @@ body {
   margin: 0 auto;
   padding: 0  36px; }
 
+.container__contact {
+  max-width: 708px; }
+
 h2 {
   font-size: 64px;
   font-weight: 700; }
@@ -84,13 +87,48 @@ h5 {
   font-size: 24px;
   font-weight: 700; }
 
+.font-italic {
+  font-style: italic; }
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
+.jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .text-center {
   text-align: center; }
+
+.mb-1 {
+  margin-bottom: 0.25rem; }
+
+.mb-2 {
+  margin-bottom: 0.5rem; }
+
+.mb-3 {
+  margin-bottom: 1rem; }
+
+.mb-4 {
+  margin-bottom: 1.5rem; }
+
+.mb-5 {
+  margin-bottom: 2rem; }
+
+.mb-6 {
+  margin-bottom: 3rem; }
+
+.mb-7 {
+  margin-bottom: 3.5rem; }
+
+.btn__primary {
+  color: #fff;
+  background-color: #AA0601;
+  border: none;
+  padding: 0; }
 
 .logo a {
   display: block;
@@ -160,7 +198,8 @@ header {
 .pro {
   background-color: #FBF2F2;
   padding: 80px 0px;
-  color: #650300; }
+  color: #650300;
+  margin-bottom: 80px; }
   .pro .pro__title {
     margin-bottom: 24px; }
 
@@ -189,5 +228,159 @@ header {
   .pro__item {
     width: calc((100% - (24px*1)) / 2);
     margin-bottom: 24px; } }
+
+.classic {
+  color: #AA0601;
+  margin-bottom: 80px; }
+  .classic .classic__title {
+    margin-bottom: 48px;
+    color: #650300; }
+
+.classic__item {
+  width: calc((100% - (24px*2)) / 3); }
+  .classic__item h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 4.5vmin; }
+
+@media (max-width: 768px) {
+  .classic__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .classic__item {
+    margin-bottom: 24px;
+    width: 47vw; } }
+
+.coBranding {
+  background-image: url(../images/index-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 80px; }
+  .coBranding .coBranding__title {
+    padding-top: 80px;
+    padding-bottom: 48px;
+    color: #fff; }
+
+.coBranding__item h3 {
+  background-color: #fff;
+  color: #AA0601;
+  padding: 8px 0px;
+  text-align: center;
+  font-style: italic; }
+
+@media (max-width: 768px) {
+  .coBranding {
+    background-image: url(../images/index-bg-sm.png); }
+  .coBranding__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .coBranding__list li:nth-child(1) {
+      margin-bottom: 24px; } }
+
+.reCommend {
+  padding: 80px 0px; }
+
+.reCommend__title {
+  margin-bottom: 48px; }
+
+.reCommend__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.reCommend__item {
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  border: 1px solid #DEE2E6;
+  width: calc((100% - (24px*3)) / 4);
+  margin-right: 24px; }
+  .reCommend__item:nth-child(4n) {
+    margin-right: 0px; }
+
+.reCommend__content {
+  padding: 16px; }
+  .reCommend__content p:nth-child(1) {
+    margin-bottom: 8px;
+    font-weight: 500; }
+  .reCommend__content p:nth-child(2) {
+    padding-bottom: 72px; }
+  .reCommend__content p:nth-child(3) {
+    font-size: 14px;
+    color: #707070; }
+
+.contact {
+  background-color: #FBF2F2;
+  padding: 80px 0; }
+
+.contact__title {
+  color: #650300; }
+
+.input__primary {
+  border: 1px solid black;
+  padding: 6px 12px; }
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2); }
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2); }
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2); }
+
+::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2); }
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.2); }
+
+.contact__input {
+  display: block;
+  background-color: #FBF2F2;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 16px; }
+
+.contact__label {
+  display: block;
+  margin-bottom: 8px; }
+
+.contact__text {
+  margin-bottom: 24px; }
+
+.contact__btn {
+  padding: 16px 0px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  font-size: 16px;
+  width: 65.408805%; }
+
+textarea {
+  resize: none;
+  overflow: hidden; }
+
+.contact__textarea {
+  display: block;
+  background-color: #FBF2F2;
+  width: 100%;
+  height: 136px;
+  padding: 6px 12px;
+  margin-bottom: 16px; }
+
+input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  background-color: #FBF2F2; }
 
 /*# sourceMappingURL=all.css.map */
