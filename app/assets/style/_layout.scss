@@ -34,10 +34,102 @@
     }
     .nav__link{
             color:$white;
-            padding: 24px 0px;  
+            padding: 24px 0px; 
+            transition: all .5s; 
             &:hover{
-                color:$bg-secondary;
+                color:$link-hover;
             }
         
     }
+}
+
+footer{
+  background-color:$primary;
+}
+.menuSocial{
+  padding-top: 48px;
+}
+
+.menu__item{
+  a{
+    color:$white;
+    margin-right: 48px;
+    transition: .5s all;
+    &:hover{
+      color:$link-hover;
+    }
+  }
+  .faq{
+    margin-right: 0;
+  }
+}
+.social__item{
+  img{
+    width: 48px;
+    margin-left: 32px;
+  }
+  .fb{
+    margin-left: 0;
+  }
+}
+.contactInfo{
+  margin-bottom: 31px;
+  position: relative;
+  padding-bottom: 32px;
+
+  &::before{
+    content:"";
+    height: 1px;
+    width: 94%;
+    background-color:$white;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.contactInfo__item{
+  
+  a{
+    display: inline-block;
+    color:$white;
+    font-size: 36px;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+ 
+}
+.call{
+  font-size: 36px;
+  color:$white;
+  padding: 6px;
+  margin-right: 16px;
+}
+.mail{
+  font-size: 40px;
+  color:$white;
+  padding: 4px;
+  margin-right: 16px;
+}
+.copyRight{
+  color:$white;
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+.private{
+  a{
+    margin-left:48px;
+    color:$white;
+    transition: all .5s;
+    &:hover{
+      color:$link-hover;
+    }
+  }
 }

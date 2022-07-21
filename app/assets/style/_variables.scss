@@ -6,6 +6,9 @@ $black-500:#707070;
 $white:#fff;
 $shadow-color:rgba(0, 0, 0, 0.16);
 $spacer:1rem;
+$link-hover:rgba(227, 227, 227, 0.89);
+$button-hover:rgba(143, 4, 0, 1);
+
 
 body{
     font-family: 'Noto Sans TC', 'Roboto' , -apple-system, BlinkMacSystemFont,  "PingFang TC", "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -55,6 +58,9 @@ h5{
 .jcsb{
     justify-content: space-between;
 }
+.align-center{
+align-items: center;
+}
 .text-center{
     text-align: center;
 }
@@ -81,9 +87,18 @@ h5{
     margin-bottom: $spacer*3.5;
 }
 
-.btn__primary{
+.btn-primary{
+    cursor: pointer;
     color:$white;
     background-color: $primary;
     border: none;
     padding: 0;
+}
+
+.input-primary{
+    border: 1px solid black;
+    padding: 6px 12px;
+}
+::placeholder{
+    color:rgba(0, 0, 0, 0.20);
 }
