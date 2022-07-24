@@ -95,6 +95,10 @@ h6 {
   font-size: 24px;
   font-weight: 700; }
 
+.text-48-bold {
+  font-size: 48px;
+  font-weight: 700; }
+
 .font-italic {
   font-style: italic; }
 
@@ -120,6 +124,10 @@ h6 {
 
 .text-center {
   text-align: center; }
+
+.family-robot-500 {
+  font-family: 'Roboto';
+  font-weight: 500; }
 
 .mb-1 {
   margin-bottom: 0.25rem; }
@@ -431,7 +439,7 @@ a {
     .banner__text .btn__buy:hover {
       background-color: #8f0400; }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .banner {
     background-image: url(../images/home-header-sm.png); }
     .banner .banner__subTitle {
@@ -439,7 +447,7 @@ a {
   .banner__title {
     font-size: 6.5vmin; } }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .banner {
     background-size: 100%;
     padding-bottom: 94.69697%;
@@ -613,10 +621,12 @@ a {
     width: calc((100% - (24px*1)) / 2);
     margin-bottom: 24px; } }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .reCommend__item {
     width: 100%;
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+    .reCommend__item img {
+      width: 100%; } }
 
 .contact {
   background-color: #FBF2F2;
@@ -693,6 +703,17 @@ input[type=checkbox] {
   font-size: 32px;
   padding: 24px 0px; }
 
+@media (max-width: 992px) {
+  .frames__menu a {
+    font-size: 24px;
+    padding: 16px 0px; } }
+
+@media (max-width: 767px) {
+  .frames__menu {
+    padding: 0 0; }
+    .frames__menu a {
+      font-size: 16px; } }
+
 .frames__header img {
   width: 50%; }
 
@@ -707,13 +728,11 @@ input[type=checkbox] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  gap: 80px 24px;
+  margin-bottom: 80px; }
   .optical__product li {
-    width: calc((100% - (24px*3))/4);
-    margin-right: 24px;
-    margin-bottom: 80px; }
-    .optical__product li:nth-child(4n) {
-      margin-right: 0; }
+    width: calc((100% - (24px*3))/4); }
 
 .product__content {
   display: -webkit-box;
@@ -723,13 +742,14 @@ input[type=checkbox] {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .product__content p {
-    font-size: 24px; }
+    font-size: 2.04vmin; }
     .product__content p:nth-child(2) {
       color: #AA0601;
       font-weight: 500; }
 
 .product__color {
-  position: relative; }
+  position: relative;
+  height: 24px; }
   .product__color::before, .product__color::after {
     content: "";
     position: absolute;
@@ -747,13 +767,25 @@ input[type=checkbox] {
     background-color: #B75929; }
 
 @media (max-width: 992px) {
-  .optical__product li {
-    width: calc((100% - (24px*1))/2);
-    margin-right: 24px; }
-    .optical__product li:nth-child(4n) {
-      margin-right: 0px; }
-    .optical__product li:nth-child(2n) {
-      margin-right: 0px; } }
+  .optical__product {
+    row-gap: 40px; }
+    .optical__product li {
+      width: calc((100% - (24px*1))/2); }
+  .product__content p {
+    font-size: 24px; } }
+
+@media (max-width: 767px) {
+  .optical {
+    padding-top: 40px;
+    padding-bottom: 64px; }
+  .optical__title h4, .optical__title h5 {
+    font-size: 24px; }
+  .optical__product {
+    margin-bottom: 64px; }
+    .optical__product li {
+      width: 100%; }
+      .optical__product li img {
+        width: 100%; } }
 
 .pagination li {
   border-right: 1px solid #555555;
@@ -779,5 +811,40 @@ input[type=checkbox] {
   .pagination a:hover {
     background-color: #000;
     color: #fff; }
+
+.store {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  .store h2 {
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 32px; }
+    .store h2::after {
+      content: "";
+      height: 72px;
+      width: 8px;
+      position: absolute;
+      top: 0;
+      left: -4px;
+      background: #AA0601; }
+
+.city__title {
+  margin-right: 16px; }
+
+.store__select {
+  font-size: 18px;
+  padding: 6px 12px;
+  width: 304px;
+  border: 1px solid #CED4DA; }
+
+.city__form {
+  margin-bottom: 40px; }
+
+.store__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 48px 24px; }
+  .store__list .store__item {
+    width: calc((100% - (24px*2)) / 3); }
 
 /*# sourceMappingURL=all.css.map */
