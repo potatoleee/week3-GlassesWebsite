@@ -1,0 +1,39 @@
+
+.store{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    h2{
+        padding-left: 16px;
+        position: relative;
+        margin-bottom: 32px;
+        &::after{
+            content: "";
+            height: 72px;
+            width: 8px;
+            position: absolute;
+            top: 0;
+            left:-4px;
+            background: $primary;
+        }
+    }
+}
+.city__title{
+    margin-right: 16px;
+}
+.store__select{
+
+    font-size: 18px;
+    padding: 6px 12px;
+    width: 304px;
+    border: 1px solid #CED4DA;
+}
+.city__form{
+    margin-bottom: 40px;
+}
+.store__list{
+    flex-wrap: wrap;
+    gap:48px 24px;
+    .store__item{
+        width:calc((100% - (24px*2)) / 3); 
+    }
+}

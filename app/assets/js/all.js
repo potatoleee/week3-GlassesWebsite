@@ -7,16 +7,16 @@
   
   
 // })
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
-});
+// console.log('Hello!');
 
 // $(document).ready(() => {
-  //   console.log('HesSchool Hello!');
-  // });
+//   console.log('HesSchool Hello!');
+// });
 
-  // $('.btn__buger').click(function(){
-  //   $('btn__buger').toggleClass('open');
-  // })
+// $(document).ready(() => {
+//     console.log('HesSchool Hello!');
+//   });
+
+//   $('.btn__buger').click(function(){
+//     $('btn__buger').toggleClass('open');
+//   })

@@ -21,13 +21,14 @@
         padding: 6px 12px ;   
         font-size: 20px; 
         transition: all .5s;
+        display: inline-block;
         &:hover{
             background-color:$button-hover;
         }
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .banner{
         background-image: url(../images/home-header-sm.png);
         .banner__subTitle{
@@ -38,7 +39,7 @@
         font-size: 6.5vmin;
     }
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .banner{
         background-size: 100%;
         padding-bottom: 94.69697%;
@@ -84,7 +85,7 @@
         margin-bottom: 8px;
     }
 }
-@media(max-width:768px){
+@media(max-width:992px){
     .pro{
         padding-bottom: 56px;
     }
@@ -128,7 +129,7 @@
         font-size: 4.5vmin;
     }
 }
-@media(max-width:768px){
+@media(max-width:992px){
     .classic__list{
         flex-direction: column;
         align-items: center;
@@ -169,7 +170,7 @@
         font-style: italic;
     }
 }
-@media (max-width:768px) {
+@media (max-width:992px) {
     .coBranding{
         background-image: url(../images/index-bg-sm.png);
     }
@@ -222,7 +223,7 @@
         
     }
 }
-@media (max-width:768px) {
+@media (max-width:992px) {
     .reCommend{
         padding-bottom: 54px;
     }
@@ -232,10 +233,13 @@
     }
     
 }
-@media (max-width:576px) {
+@media (max-width:767px) {
     .reCommend__item{
         width:100%;
         margin-bottom: 16px;
+        img{
+            width: 100%;
+        }
     }
 }
 // recommend end

@@ -8,6 +8,7 @@ $shadow-color:rgba(0, 0, 0, 0.16);
 $spacer:1rem;
 $link-hover:rgba(227, 227, 227, 0.89);
 $button-hover:rgba(143, 4, 0, 1);
+$pagination-color:#555555;
 
 
 body{
@@ -15,7 +16,6 @@ body{
     line-height: 1.5;
     font-weight: 400;
     color:$black-900;
-
 }
 
 .container{
@@ -52,7 +52,14 @@ h4{
     
 }
 h5{
+    font-size: 32px;
+}
+h6{
     font-size: 24px;
+    font-weight: 700;
+}
+.text-48-bold{
+    font-size: 48px;
     font-weight: 700;
 }
 .font-italic{
@@ -64,13 +71,19 @@ h5{
 .jcsb{
     justify-content: space-between;
 }
+.jcc{
+    justify-content: center;
+}
 .align-center{
 align-items: center;
 }
 .text-center{
     text-align: center;
 }
-
+.family-robot-500{
+    font-family: 'Roboto';
+    font-weight: 500;
+}
 .mb-1{
     margin-bottom: $spacer*.25;
 }
