@@ -17,15 +17,26 @@
         }
     }
 }
+.store__item{
+    .store__details{
+        display: block;
+        text-align: center;
+        background-color:$black-900;
+        color:$white;
+        font-size: 19px;
+        padding: 16px 0px;
+    }
+}
 .city__title{
     margin-right: 16px;
+    display: block;
 }
 .store__select{
-
     font-size: 18px;
     padding: 6px 12px;
     width: 304px;
     border: 1px solid #CED4DA;
+    color:#495057;
 }
 .city__form{
     margin-bottom: 40px;
@@ -37,3 +48,74 @@
         width:calc((100% - (24px*2)) / 3); 
     }
 }
+.store__name{
+    padding: 7px 23px;
+    border: 1px solid $shadow-color;
+}
+.store__info{
+    padding:16px 24px;
+    border: 1px solid $shadow-color;
+    li{
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 8px;
+        &:nth-last-child(1){
+            margin-bottom: 0px;
+        }
+      
+    }
+    .call-store{
+        font-size: 18px;
+        padding: 3px;
+        margin-right: 8px;
+    }
+    .time{
+        font-size: 20px;
+        padding: 2px;
+        margin-right: 8px;
+    }
+    .location{
+        font-size: 20px;
+        padding: 6px 2px;
+        margin-right: 8px;
+    }
+}
+
+
+@media (max-width:992px) {
+    .store__list{
+        row-gap: 24px;
+        .store__item{
+            width:calc((100% - (24px*1)) / 2); 
+        }
+    }
+    
+}
+@media (max-width:767px){
+    .store{
+        padding-top: 40px;
+        padding-bottom: 64px;
+        h2{
+            font-size: 24px;
+            margin-bottom: 24px;
+            &::after{
+                height: 36px;
+            }
+        }
+        .store__item{
+            width: 100%;
+        }
+        .store__select{
+            // width: 79.310345%;(374字會斷行）
+           width:  75.310345%;
+        }
+    }
+    .city__form{
+        margin-bottom:24px;
+        .city__title{
+            margin-right: 8px;
+        }
+    }
+    
+}
+

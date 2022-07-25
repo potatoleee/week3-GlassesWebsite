@@ -1,0 +1,29 @@
+.branch{
+    gap:0px 24px;
+}
+@media (max-width:992px) {
+    .branch{
+        flex-direction: column;
+        gap: 24px 0px;
+        .store__item{
+            display: flex;
+            gap: 0px 24px;
+            img{
+                width:calc( (100% - 24px) / 2);
+            }
+        }
+    }
+   
+}
+@media (max-width:767px) {
+    .branch{
+        .store__item{
+            flex-direction: column;
+            gap: 0px;
+            img{
+                width:100%;
+            }
+        }
+    }
+   
+}
