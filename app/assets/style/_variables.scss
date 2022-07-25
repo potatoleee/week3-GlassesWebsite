@@ -9,6 +9,8 @@ $spacer:1rem;
 $link-hover:rgba(227, 227, 227, 0.89);
 $button-hover:rgba(143, 4, 0, 1);
 $pagination-color:#555555;
+$blog-text:#555555;
+
 
 
 body{
@@ -79,7 +81,7 @@ align-items: center;
 .text-center{
     text-align: center;
 }
-.family-robot-500{
+.family-roboto-500{
     font-family: 'Roboto';
     font-weight: 500;
 }
@@ -119,4 +121,30 @@ align-items: center;
 }
 ::placeholder{
     color:rgba(0, 0, 0, 0.20);
+}
+
+.content-title{
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 32px;
+    &::after{
+        content: "";
+        height: 72px;
+        width: 8px;
+        position: absolute;
+        top: 0;
+        left:-4px;
+        background: $primary;
+    }
+}
+@media (max-width:767px){
+    .content-title{
+        font-size: 24px;
+        margin-bottom: 24px;
+        &::after{
+            height: 36px;
+        }
+    }
 }

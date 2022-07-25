@@ -2,20 +2,7 @@
 .store{
     padding-top: 96px;
     padding-bottom: 80px;
-    h2{
-        padding-left: 16px;
-        position: relative;
-        margin-bottom: 32px;
-        &::after{
-            content: "";
-            height: 72px;
-            width: 8px;
-            position: absolute;
-            top: 0;
-            left:-4px;
-            background: $primary;
-        }
-    }
+   
 }
 .store__item{
     .store__details{
@@ -95,13 +82,7 @@
     .store{
         padding-top: 40px;
         padding-bottom: 64px;
-        h2{
-            font-size: 24px;
-            margin-bottom: 24px;
-            &::after{
-                height: 36px;
-            }
-        }
+        
         .store__item{
             width: 100%;
         }
