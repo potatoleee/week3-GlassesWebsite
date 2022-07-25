@@ -51,7 +51,8 @@ table {
 
 a {
   text-decoration: none;
-  display: block; }
+  display: block;
+  color: inherit; }
 
 img {
   display: block;
@@ -124,7 +125,7 @@ h6 {
 .text-center {
   text-align: center; }
 
-.family-robot-500 {
+.family-roboto-500 {
   font-family: 'Roboto';
   font-weight: 500; }
 
@@ -174,6 +175,28 @@ h6 {
 
 ::placeholder {
   color: rgba(0, 0, 0, 0.2); }
+
+.content-title {
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 32px; }
+  .content-title::after {
+    content: "";
+    height: 72px;
+    width: 8px;
+    position: absolute;
+    top: 0;
+    left: -4px;
+    background: #AA0601; }
+
+@media (max-width: 767px) {
+  .content-title {
+    font-size: 24px;
+    margin-bottom: 24px; }
+    .content-title::after {
+      height: 36px; } }
 
 .logo a {
   display: block;
@@ -316,19 +339,16 @@ footer {
 
 .footer__menu {
   margin-bottom: 35.98px;
-  margin-top: 12.02px; }
+  margin-top: 12.02px;
+  gap: 0px 48px; }
 
 .menu__item a {
   color: #fff;
-  margin-right: 48px;
   -webkit-transition: .5s all;
   -o-transition: .5s all;
   transition: .5s all; }
   .menu__item a:hover {
     color: rgba(227, 227, 227, 0.89); }
-
-.menu__item .faq {
-  margin-right: 0; }
 
 .social__item img {
   width: 48px;
@@ -814,18 +834,6 @@ input[type=checkbox] {
 .store {
   padding-top: 96px;
   padding-bottom: 80px; }
-  .store h2 {
-    padding-left: 16px;
-    position: relative;
-    margin-bottom: 32px; }
-    .store h2::after {
-      content: "";
-      height: 72px;
-      width: 8px;
-      position: absolute;
-      top: 0;
-      left: -4px;
-      background: #AA0601; }
 
 .store__item .store__details {
   display: block;
@@ -894,11 +902,6 @@ input[type=checkbox] {
   .store {
     padding-top: 40px;
     padding-bottom: 64px; }
-    .store h2 {
-      font-size: 24px;
-      margin-bottom: 24px; }
-      .store h2::after {
-        height: 36px; }
     .store .store__item {
       width: 100%; }
     .store .store__select {
@@ -935,5 +938,103 @@ input[type=checkbox] {
     gap: 0px; }
     .branch .store__item img {
       width: 100%; } }
+
+.faq {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  .faq h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px; }
+  .faq h4 {
+    font-size: 20px;
+    font-weight: 700; }
+
+.faq__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px 0px; }
+  .faq__list .faq__item {
+    width: 856px; }
+
+@media (max-width: 992px) {
+  .faq__list .faq__item {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .faq {
+    padding-top: 40px;
+    padding-bottom: 64px; }
+  .faq__list {
+    gap: 24px 0px; } }
+
+.blog {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  .blog .pagination {
+    margin-top: 124px; }
+
+.blog__nav {
+  background-color: #650300; }
+  .blog__nav .blog__nav__content {
+    gap: 0px 48px; }
+    .blog__nav .blog__nav__content a {
+      padding: 13px 0px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 700;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .blog__nav .blog__nav__content a:hover {
+        color: rgba(227, 227, 227, 0.89); }
+
+.icon__search {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .icon__search:hover {
+    color: rgba(227, 227, 227, 0.89); }
+
+.blog__item {
+  gap: 0px 24px;
+  margin-bottom: 60px; }
+  .blog__item img {
+    width: calc((100% - 24px) / 2); }
+
+.item__content {
+  position: relative; }
+  .item__content .item__subTitle {
+    margin-bottom: 16px; }
+    .item__content .item__subTitle p:nth-child(1) {
+      font-size: 20px; }
+  .item__content .item__content--title h3 {
+    color: #650300;
+    font-weight: 400;
+    font-size: 32px; }
+  .item__content .item__content--text {
+    font-size: 20px;
+    color: #555555; }
+  .item__content .blog__more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 36px;
+    color: #650300;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .item__content .blog__more:hover {
+      color: #AA0601; }
 
 /*# sourceMappingURL=all.css.map */
