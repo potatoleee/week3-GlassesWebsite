@@ -148,3 +148,26 @@ align-items: center;
         }
     }
 }
+
+.blog__nav{
+    background-color: $primary-dark;
+
+    .blog__nav__content{
+        gap:0px 48px;
+        a{
+            padding: 13px 0px;
+            font-size: 20px;
+            color:$white;
+            font-weight: 700;
+            transition: all .3s;
+            &:hover{
+                color:$link-hover;
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    .blog__nav{
+        display: none;
+    }
+}
