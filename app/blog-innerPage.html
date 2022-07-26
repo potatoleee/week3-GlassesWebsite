@@ -4,8 +4,8 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="blog__nav ">
-    <div class="container d-flex align-center jcsb  ">
+<div class="blog__nav--inner">
+    <div class="blog__nav__wrapper container d-flex align-center jcsb  ">
         <ul class="blog__nav__content d-flex ">
             <li><a href="#">最新消息</a></li>
             <li><a href="#">特別企劃</a></li>
@@ -18,9 +18,110 @@ current: index
     </div>
 </div>
 
-<ul class="d-flex">
-    <li><a href="">首頁/</a></li>
-    <li><a href="">部落格/</a></li>
-    <li><a href="">特別企劃/</a></li>
-    <li><a href="">情人特別企劃</a></li>
-</ul>
+<div class="breadAndTag container">
+    <ul class=" breadCrumbs  d-flex">
+        <li><a href="index.html">首頁/ </a></li>
+        <li><a href="blog.html">部落格/ </a></li>
+        <li><a href="blog.html">特別企劃/ </a></li>
+        <li><a href="blog-innerPage.html">情人特別企劃 </a></li>
+    </ul>
+
+    <ul class=" hashTag d-flex">
+        <li class="family-roboto weight-700">#special</li>
+        <li class="family-roboto weight-700">#event</li>
+    </ul>
+</div>
+
+<div class="innerPage container d-flex">
+
+    <div class="article ">
+
+            <h2>情人特別企劃</h2>
+            <h3 class="family-roboto">2020 Valentine’s Special</h3>
+
+            <ul class="article__list">
+                <li class="article__item">
+                    <img src="./assets/images/blogpage-1.png" alt="1">
+                    <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+                </li>
+                <li class="article__item">
+                    <img src="./assets/images/blogpage-2.png" alt="2">
+                    <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+                </li>
+                <li class="article__item">
+                    <img src="./assets/images/blogpage-3.png" alt="3">
+                    <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+                </li>
+                <li class="article__item">
+                    <img src="./assets/images/blogpage-4.png" alt="4">
+                    <ul>
+                        <li>2/14(五)-2/20(日)</li>
+                        <li>至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個</li>
+                        <li>期間優惠還有~~持他牌鏡框更換鏡片</li>
+                        <li>薄型非球面鏡片折300元</li>
+                        <li>濾藍光鏡片折500元</li>
+                        <li>快快帶上另一半</li>
+                        <li>讓彼此每一次睜開眼，都被愛的視線包圍!</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="article__footer">
+                <ul>
+                    <li class="article__share d-flex align-center">
+                        <p class="family-roboto weight-700">share</p>
+                        <img src="./assets/images/logo-facebook.png" alt="">
+                        <img src="./assets/images/logo-instagram.png" alt="">
+                    </li>
+                    <li>
+                        <ul class=" nextPage d-flex jcsb">
+                            <li class="d-flex"> 
+                                <span class="material-symbols-outlined icon__arrow--back">
+                                arrow_back</span>
+                                <a href="#">上一篇：街頭潮人訪問 1</a>
+                            </li>
+                            <li class="d-flex">
+                                <a href="#">上一篇：街頭潮人訪問 1</a>
+                                <span class="material-symbols-outlined icon__arrow--forward">
+                                 arrow_forward</span>
+                            </li>
+                        </ul>
+                       
+                        
+                    </li>
+                </ul>
+
+            </div>
+
+    </div>
+
+
+    <aside>
+        <div class="d-flex align-center">
+            <span class="material-symbols-outlined icon__label">label</span>
+            <h4>TAGS</h4>
+        </div>
+        <ul class="tag__list d-flex">
+            <li class="family-roboto weight-700">
+                <p>#special</p>
+                <p>#sale</p>
+            </li>
+            <li class="family-roboto weight-700">
+                <p>#new_item</p>
+                <p>#interview</p>
+            </li>
+            <li class="family-roboto weight-700">
+                <p>#trivia</p>
+                <p>#news</p>
+            </li>
+            <li class="family-roboto weight-700">
+                <p>#event</p>
+            </li>
+        </ul>
+
+
+    </aside>
+
+</div>
+
+
