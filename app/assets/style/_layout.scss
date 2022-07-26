@@ -79,15 +79,18 @@ display: none;
   background-color: $white;
 
 }
+.btn__buger--middle.open{
+  display: none;
+}
 
 }
 
 .btn__buger.open{
-&::before,&::after{
-  top:50%;
-  transform: translateY(-50%);
- 
-}
+  &::before,&::after{
+    top:50%;
+    transform: translateY(-50%);
+  
+  }
 }
 
 .btn__buger.open::before{
@@ -98,9 +101,7 @@ transform: rotate(45deg);
 }
 
 @media (max-width:767px) {
-.nav__content{
-  display: none;
-}
+
 .btn__buger{
   display: block;
 }
@@ -109,13 +110,15 @@ header{
   position: relative;
 }
 .nav__content{
+  display: flex;
   position: absolute;
-  top: 100%;
+  top: -200%;
   z-index: 3;
   background-color: $primary;
   width: 100%;
   right: 0px;
   flex-wrap: wrap;
+  transition: all .5s;
   
   li{
     width: 50%;
@@ -127,8 +130,9 @@ header{
   }
 }
 .nav__content.open{
-  display: block;
+  top: 100%;
 }
+
 }
 
 
