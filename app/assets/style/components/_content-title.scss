@@ -1,0 +1,25 @@
+.content-title{
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 32px;
+    &::after{
+        content: "";
+        height: 72px;
+        width: 8px;
+        position: absolute;
+        top: 0;
+        left:-4px;
+        background: $primary;
+    }
+}
+@media (max-width:767px){
+    .content-title{
+        font-size: 24px;
+        margin-bottom: 24px;
+        &::after{
+            height: 36px;
+        }
+    }
+}

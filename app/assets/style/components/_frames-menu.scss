@@ -1,0 +1,81 @@
+.frames__menu{
+
+    li{
+        position: relative;
+        &:nth-child(1){
+            border-left: 1px solid #DCDCDC;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 8px;
+                bottom: 0;
+                left: 0;
+                background: $primary;
+            }
+        }
+        width: 33.33%;
+        text-align: center;
+        border-right: 1px solid #DCDCDC;
+        // border-top: 1px solid #DCDCDC;
+        // border-bottom: 1px solid #DCDCDC;
+    }
+    a{
+        color:$black-900;
+        font-size: 32px;
+        padding: 24px 0px;
+
+    }
+}
+
+.frames__menu--sunGlasses{
+    li{
+        position: relative;
+        &:nth-child(2){
+            border-left: 1px solid #DCDCDC;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 8px;
+                bottom: 0;
+                left: 0;
+                background: $primary;
+            }
+        }
+        width: 33.33%;
+        text-align: center;
+        border-right: 1px solid #DCDCDC;
+        // border-top: 1px solid #DCDCDC;
+        // border-bottom: 1px solid #DCDCDC;
+    }
+    a{
+        color:$black-900;
+        font-size: 32px;
+        padding: 24px 0px;
+
+    }
+}
+
+@media (max-width:992px) {
+    .frames__menu, .frames__menu--sunGlasses{
+        a{
+            font-size: 24px;
+            padding: 16px 0px;
+        }
+    }
+}
+@media (max-width:767px) {
+    .frames__menu, .frames__menu--sunGlasses{
+        padding: 0 0;
+        a{
+            font-size: 16px;
+        }
+    }
+}
+.frames__header{
+    img{
+        width: 50%;
+    }
+}
+

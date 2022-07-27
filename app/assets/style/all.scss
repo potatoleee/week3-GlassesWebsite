@@ -1,11 +1,20 @@
 
 @import 'reset';
+
 @import 'variables';
+
+@import 'components/button';
+@import 'components/frames-menu';
+@import 'components/pagination';
+@import 'components/blog-nav';
+@import 'components/content-title';
+
+
 @import 'layout';
 
-
 @import 'pages/index';
-@import 'pages/frames';
+@import 'pages/optical';
+@import 'pages/sunGlasses';
 @import 'pages/store';
 @import 'pages/store-innerPage';
 @import 'pages/faq';

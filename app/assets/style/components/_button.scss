@@ -1,0 +1,15 @@
+.btn-primary{
+    cursor: pointer;
+    color:$white;
+    background-color: $primary;
+    border: none;
+    padding: 0;
+}
+
+.input-primary{
+    border: 1px solid black;
+    padding: 6px 12px;
+}
+::placeholder{
+    color:rgba(0, 0, 0, 0.20);
+}

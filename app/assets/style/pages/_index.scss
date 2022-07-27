@@ -86,15 +86,17 @@
     }
 }
 @media(max-width:992px){
-    .pro{
-        padding-bottom: 56px;
-    }
+   
     .pro__item{
         width:calc((100% - (24px*1)) / 2);
         margin-bottom: 24px;
     }
 }
 @media (max-width:767px) {
+    .pro{
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
     .pro__list{
         flex-direction: column;
         align-items: center;
@@ -130,6 +132,7 @@
     }
 }
 @media(max-width:992px){
+  
     .classic__list{
         flex-direction: column;
         align-items: center;
@@ -141,10 +144,18 @@
             font-size: 48px;
         }
     }
+
 }
-@media (max-width:576px) {
+@media (max-width:767px) {
+    .classic{
+        margin-bottom: 40px;
+    .classic__title{
+        font-size: 6.5vmin;
+        margin-bottom: 24px;
+    }
     .classic__item{
         width: 100%;
+    }
     }
 }
 // classic end
@@ -169,6 +180,9 @@
         text-align: center;
         font-style: italic;
     }
+    .coBranding__img--sm{
+        display: none;
+    }
 }
 @media (max-width:992px) {
     .coBranding{
@@ -183,6 +197,20 @@
         }
     }
 }
+@media (max-width:767px) {
+    .coBranding__title{
+        font-size: 6.5vmin;
+    }
+    .coBranding__img--lg{
+        display: none;
+    }
+    .coBranding__item{
+        .coBranding__img--sm{
+            display: block;
+        }
+    }
+    
+}
 // cobranding end
 // reCommend start
 
@@ -191,6 +219,7 @@
 }
 .reCommend__title{
     margin-bottom: 48px;
+    color: $primary-dark;
 }
 .reCommend__list{
     flex-wrap: wrap;
@@ -224,9 +253,7 @@
     }
 }
 @media (max-width:992px) {
-    .reCommend{
-        padding-bottom: 54px;
-    }
+    
     .reCommend__item{
         width:calc((100% - (24px*1)) / 2);
         margin-bottom: 24px;
@@ -234,6 +261,13 @@
     
 }
 @media (max-width:767px) {
+    .reCommend{
+        padding: 40px 0px;
+    }
+    .reCommend__title{
+        font-size: 6.5vmin;
+        margin-bottom: 24px;
+    }
     .reCommend__item{
         width:100%;
         margin-bottom: 16px;
@@ -281,6 +315,7 @@
         background-color:$button-hover;
     }
 }
+
 textarea{
     resize: none;
     overflow: hidden;
@@ -299,4 +334,17 @@ input[type=checkbox]{
     height: 16px;
     border: 2px solid black;
     background-color:$bg-secondary;
+}
+@media (max-width:767px) {
+    .contact{
+        padding: 40px 0;
+        .contact__title{
+            font-size: 6.5vmin;
+            margin-bottom: 24px;
+        }
+    }
+    .contact__btn{
+        width: 100%;
+    }
+    
 }

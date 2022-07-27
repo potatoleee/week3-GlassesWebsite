@@ -1,0 +1,36 @@
+.sunGlasses{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h5{
+        margin-bottom: 32px;
+    }
+}
+
+.sunGlasses__product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 24px;
+    margin-bottom: 80px;
+
+    li{
+        width: calc((100% - (24px*2))/3);
+    }
+}
+@media (max-width:992px) {
+    .sunGlasses__product{
+        row-gap: 40px;
+        li{
+            width: calc((100% - (24px*1))/2);
+        }
+    }
+    
+}
+@media (max-width:767px) {
+    .sunGlasses__product{
+        row-gap: 24px;
+        margin-bottom: 64px;
+        li{
+            width:100%;
+        }
+    }
+}
