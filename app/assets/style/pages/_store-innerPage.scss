@@ -1,29 +1,39 @@
 .branch{
     gap:0px 24px;
-}
-@media (max-width:992px) {
-    .branch{
+    @include pad{
         flex-direction: column;
         gap: 24px 0px;
-        .store__item{
+    }
+    .store__item{
+        width: initial;
+        // width: 41%;
+        @include pad{
             display: flex;
             gap: 0px 24px;
-            img{
-                width:calc( (100% - 24px) / 2);
-            }
-        }
-    }
-   
-}
-@media (max-width:767px) {
-    .branch{
-        .store__item{
+
+        @include phone{
             flex-direction: column;
             gap: 0px;
-            img{
-                width:100%;
+        }
+
+        img{
+            @include pad{
+            width:calc( (100% - 24px) / 2);
+            }
+            @include phone{
+                width: 100%;
             }
         }
+        }
     }
-   
+    // .store__img{
+    //     background-image: url("../images/storepage-1.png");
+    //     background-size: cover;
+    //     background-position: center;
+    //     height: 224px;
+       
+    // }
+    // .store__map{
+    //     width: 58%;
+    // }
 }

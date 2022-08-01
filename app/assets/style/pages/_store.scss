@@ -2,9 +2,20 @@
 .store{
     padding-top: 96px;
     padding-bottom: 80px;
+    @include phone{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
    
 }
 .store__item{
+    width:calc((100% - (24px*2)) / 3); 
+    @include pad{
+        width:calc((100% - (24px*1)) / 2); 
+    }
+    @include phone{
+        width: 100%;
+    }
     .store__details{
         display: block;
         text-align: center;
@@ -17,6 +28,9 @@
 .city__title{
     margin-right: 16px;
     display: block;
+    @include phone{
+        margin-right: 8px;
+    }
 }
 .store__select{
     font-size: 18px;
@@ -24,15 +38,21 @@
     width: 304px;
     border: 1px solid #CED4DA;
     color:#495057;
+    @include phone{
+        width:  75.310345%;
+    }
 }
 .city__form{
     margin-bottom: 40px;
+    @include phone{
+        margin-bottom:24px;
+    }
 }
 .store__list{
     flex-wrap: wrap;
     gap:48px 24px;
-    .store__item{
-        width:calc((100% - (24px*2)) / 3); 
+    @include pad{
+        row-gap: 24px;
     }
 }
 .store__name{
@@ -69,34 +89,4 @@
 }
 
 
-@media (max-width:992px) {
-    .store__list{
-        row-gap: 24px;
-        .store__item{
-            width:calc((100% - (24px*1)) / 2); 
-        }
-    }
-    
-}
-@media (max-width:767px){
-    .store{
-        padding-top: 40px;
-        padding-bottom: 64px;
-        
-        .store__item{
-            width: 100%;
-        }
-        .store__select{
-            // width: 79.310345%;(374字會斷行）
-           width:  75.310345%;
-        }
-    }
-    .city__form{
-        margin-bottom:24px;
-        .city__title{
-            margin-right: 8px;
-        }
-    }
-    
-}
 

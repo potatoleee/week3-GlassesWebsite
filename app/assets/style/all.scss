@@ -1,7 +1,13 @@
 
-@import 'reset';
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/base';
+@import 'base/typography';
 
-@import 'variables';
+@import 'helper/mixin';
+@import 'helper/helpers';
+
+
 
 @import 'components/button';
 @import 'components/frames-menu';
@@ -20,6 +26,8 @@
 @import 'pages/faq';
 @import 'pages/blog';
 @import 'pages/blog-innerPage';
+
+
 
 
 
