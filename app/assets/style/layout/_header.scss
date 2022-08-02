@@ -1,0 +1,133 @@
+.logo{
+    a{
+      display: block;
+      width: 80px;
+      height: 48.57px;
+      background-image: url(../images/logo-white.png);
+      background-repeat: no-repeat;
+      background-size: 100% ;
+      text-decoration: none;
+      overflow: hidden;
+      // 文字縮排到圖片外
+      text-indent: 101%;
+      white-space: nowrap;
+      padding: 16px 0px;
+    }
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+    background-color:$primary;
+    @include phone{
+        position: relative;
+    }
+  }
+  .nav__content{
+    display: flex;
+    font-size: 20px;
+    @include phone{
+        display: flex;
+        position: absolute;
+        top: -200%;
+        z-index: 3;
+        background-color: $primary;
+        width: 100%;
+        right: 0px;
+        flex-wrap: wrap;
+        transition: all .5s;
+    }
+
+    li{
+        padding-right: 64px;
+        @include phone{
+            width: 50%;
+            padding-right: 0;
+            text-align: center;
+        }
+        &:nth-last-child(1){
+            padding-right: 0px;
+        }
+      
+    }
+    a{
+        @include phone{
+            display: block;
+        }
+    }
+    .nav__link{
+            color:$white;
+            padding: 25px 0px; 
+            transition: all .5s; 
+            &:hover{
+                color:$link-hover;
+            }
+    }
+  }
+  .nav__content.open{
+   @include phone{
+    top: 100%;
+   } 
+  }
+  .btn__buger{
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  background-color: $primary;
+  position: relative;
+  margin: 30px 0px ;
+  transition: all .5s;
+  display: none;
+  @include phone{
+    display: block;
+  }
+  
+  &::before,&::after{
+    content:"";
+    position: absolute;
+    background-color:$white;
+    width: 100%;
+    height: 2px;
+    transition: all .5s;
+  }
+  
+  &::before{
+    top:0;
+    }
+  &::after{
+    bottom: 0;
+  }
+  
+  .btn__buger--middle{
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: $white;
+  
+  }
+  .btn__buger--middle.open{
+    display: none;
+  }
+  
+  }
+  
+  .btn__buger.open{
+    &::before,&::after{
+      top:50%;
+      transform: translateY(-50%);
+    
+    }
+  }
+  
+  .btn__buger.open::before{
+  transform: rotate(-45deg);
+  }
+  .btn__buger.open::after{
+  transform: rotate(45deg);
+  }
+  
+  

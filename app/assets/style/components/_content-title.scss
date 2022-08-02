@@ -4,6 +4,10 @@
     padding-left: 16px;
     position: relative;
     margin-bottom: 32px;
+    @include phone{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
     &::after{
         content: "";
         height: 72px;
@@ -12,13 +16,7 @@
         top: 0;
         left:-4px;
         background: $primary;
-    }
-}
-@media (max-width:767px){
-    .content-title{
-        font-size: 24px;
-        margin-bottom: 24px;
-        &::after{
+        @include phone{
             height: 36px;
         }
     }

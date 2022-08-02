@@ -1,0 +1,147 @@
+footer{
+    background-color:$primary;
+    }
+    .footer__content--top{
+    padding-top: 48px;
+    padding-bottom: 32px;
+    position: relative;
+    @include phone{
+      padding-top: 24px;
+      padding-bottom: 24px;
+    
+    }
+    
+    &::before{
+      content:"";
+      height: 1px;
+      width: calc(100% - 24px );
+      background-color:$white;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      @include phone{
+        width: calc(100% - 27px );
+      }
+    }
+    
+    
+    }
+    .footer__menu{
+      margin-bottom: 35.98px;
+      margin-top: 12.02px;
+      gap: 0px 48px;
+      @include phone{
+        display: none;
+      }
+    }
+    
+    
+    .menu__item{
+    a{
+      color:$white;
+      transition: .5s all;
+      &:hover{
+        color:$link-hover;
+      }
+    }
+    }
+    .social__item{
+    img{
+      width: 48px;
+      margin-left: 32px;
+      transition: all .5s;
+      &:hover{
+        opacity: .6;
+      }
+      @include pad{
+        width: 40px;
+        margin-left: 16px;
+      }
+      @include phone{
+        width: 24px;
+        margin-left: 8px;
+      } 
+    }
+    .fb{
+      margin-left: 0;
+    }
+    }
+    
+    
+    .contactInfo__item{
+    
+    a{
+      display: inline-block;
+      color:$white;
+      font-size: 36px;
+      transition: all .5s;
+      &:hover{
+        color:$link-hover;
+      }
+      @include phone{
+        font-size: 16px;
+      }
+    
+    }
+    }
+    
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+    
+    }
+    .call{
+    font-size: 36px;
+    color:$white;
+    padding: 6px;
+    margin-right: 16px;
+      @include phone{
+        font-size: 18px;
+        padding: 3px;
+        margin-right: 11px;
+      }
+    }
+    .mail{
+    font-size: 40px;
+    color:$white;
+    padding: 4px;
+    margin-right: 16px;
+      @include phone{
+        font-size: 20px;
+        margin-right: 8px;
+      }
+    }
+    .copyRight{
+    color:$white;
+    margin-top: 32px;
+    padding-bottom: 40px;
+      @include phone{
+        flex-direction: column;
+        margin-top: 16px;
+        padding-bottom: 24px;
+      }
+    }
+    .private{
+      @include phone{
+        flex-direction: column;
+      }
+    a{
+      margin-left:48px;
+      color:$white;
+      transition: all .5s;
+        @include phone{
+          margin-left: 0px;
+          margin-top: 8px;
+        }
+      &:hover{
+        color:$link-hover;
+      }
+    }
+    }
+    
+    
+    
