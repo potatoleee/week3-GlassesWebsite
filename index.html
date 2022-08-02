@@ -160,19 +160,20 @@
       <form>
 
           <label class="contact__label "for="name">姓名</label>
-          <input class="input-primary contact__input"type="text" name="name" placeholder="陳小明">
+          <input id="name" class="input-primary contact__input"type="text" name="name" placeholder="陳小明">
 
           <label class="contact__label "for="tel">聯絡電話</label>
-          <input class="input-primary contact__input"type="tel" name="tel" placeholder="0912-345-678">
+          <input id="tel" class="input-primary contact__input"type="tel" name="tel" placeholder="0912-345-678">
 
           <label class="contact__label "for="email">電子郵件</label>
-          <input class="input-primary contact__input"type="email" name="email" placeholder="example@email.com">
+          <input id="email" class="input-primary contact__input"type="email" name="email" placeholder="example@email.com">
 
           <label class="contact__label "for="suggest">意見反應</label>
-          <textarea class="contact__textarea"name="suggest" placeholder="請輸入您的意見"></textarea>
-          <input class="input-primary "type="checkbox" name="agree" id="">
-          <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          <textarea id="suggest" class="contact__textarea"name="suggest" placeholder="請輸入您的意見"></textarea>
 
+          <input id="agree" class="input-primary "type="checkbox" name="agree" id="">
+          <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          <!-- input的id 對應label的for 這樣點擊label時，同時input會產生focus的框框 -->
           <button class="btn-primary contact__btn"type="submit">確認送出</button>
       </form>
   </div>
