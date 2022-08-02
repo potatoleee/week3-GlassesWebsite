@@ -1,6 +1,10 @@
 .faq{
     padding-top: 96px;
     padding-bottom: 80px;
+    @include phone{
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
     
     h3{
         font-size: 24px;
@@ -17,26 +21,13 @@
   display: flex;
   flex-direction: column;
   gap:32px 0px;
-  .faq__item{
-    //856/1296
-    // width: 66.049383%;
-    width: 856px;
+  @include phone{
+    gap:24px 0px;
   }
-}
-@media (max-width:992px) {
-    .faq__list{
-        .faq__item{
-            width: 100%;
-        }
+  .faq__item{
+    width: 856px;
+    @include pad{
+        width: 100%;
     }
-}
-@media (max-width:767px) {
-    .faq{
-        padding-top: 40px;
-        padding-bottom: 64px;
-        
-    }
-    .faq__list{
-        gap:24px 0px;
-    }
+  }
 }

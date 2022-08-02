@@ -1,9 +1,18 @@
 .breadAndTag{
     margin-top: 24px;
     margin-bottom: 8px;
+    @include pad{
+        margin-top: 8px;
+    }
+    @include phone{
+        margin-top: 16px;
+    }
 }
 .breadCrumbs{
     gap: 0px 8px;
+    @include phone{
+        margin-bottom: 8px;
+    }
     li{
         &:nth-last-child(1){
             color:$primary;
@@ -16,64 +25,95 @@
     li{
         color:$primary;
         font-size: 24px;
+        @include phone{
+            font-size: 16px;
+        }
         
     }
 }
-.tag__list{
-    gap:4px 24px;
-    flex-wrap: wrap;
-    li{
-        display: flex;
-        width: 100%;
-        font-size: 24px;
-        p{
-            color:$primary;
-            &:nth-child(1){
-                margin-right: 16px;
-            }
-        }
-    }
-    
-}
-// aside start
-aside{
-    color:$primary;
-    .icon__label{
-        font-size: 38px;
-        padding: 5px;
-        margin-right: 8px;
-    }
-    h4{
-        font-size: 32px;
-    }
-}
+
 .article{
     margin-right: 24px;
+    width: 66%;
+    @include pad{
+        width: 71.666%;
+    }
+    @include phone{
+        width: 100%;
+        margin-bottom: 64px;
+        margin-right: 0;
+    }
     h2{
         font-size: 48px;
         font-weight: 400;
+        @include phone{
+            font-size: 24px;
+        }
     }
     h3{
         font-size: 24px;
         font-weight: 500;
         margin-bottom: 16px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+        @include phone{
+            font-size: 16px;
+        }
     }
 }
-.article__item{
-    margin-bottom: 40px;
-    color:$blog-text;
+.article__list{
     img{
         margin-bottom: 8px;
+        @include pad{
+            margin-bottom: 16px;
+        }
+        @include phone{
+            margin-bottom: 8px;
+        }
+    }
+    p{
+        color:$blog-text;
+        margin-bottom: 40px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+        @include phone{
+            margin-bottom: 16px;
+        }
+    }
+    .article__list__promotion{
+        p{
+        margin-bottom:0px;
+    }
     }
 }
+
 .article__footer{
     margin-bottom: 80px;
     margin-top: 40px;
+    @include phone{
+        display: none;
+    }
     .article__share{
+        position: relative;
         gap:0px 16px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid black;
+        padding-bottom: 16px;
+        // border-bottom: 1px solid black;
         margin-bottom: 24px;
+
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            background-color: #707070;
+            width: 100%;
+            height: 1px;
+            @include pad{
+                width: 139.759036%;
+            }
+        }
+
         img{
             width: 24px;
         }
@@ -87,57 +127,51 @@ aside{
         margin-left: 8px;
     }
 }
-// aside end
-
-
-@media (max-width:992px) {
-
-    .article{
-        h3{
-            margin-bottom: 8px;
-        }
+// aside start
+aside{
+    width: 32.098765%;
+    color:$primary;
+    @include pad{
+        width: 21.666%;
     }
-    .article__item{
-        margin-bottom: 24px;
-        img{
-            margin-bottom: 16px;
-        }
-    }
-    .breadAndTag{
-        margin-top: 8px;
-    }
-    
-}
-@media (max-width:767px){
-    .breadAndTag{
-        margin-top: 16px;
-        .breadCrumbs{
-            margin-bottom: 8px;
-        }
-    }
-    .hashTag{
-        li{
-            font-size: 16px;
-        }
-    }
-    .article{
-        margin-bottom: 64px;
-        margin-right: 0;
-        h2{
-            font-size: 24px;
-        }
-        h3{
-            font-size: 16px;
-        }
-    }
-    .article__item{
-        margin-bottom: 16px;
-        img{
-            margin-bottom: 8px;
-        }
-    }
-    aside,.article__footer{
+    @include phone{
         display: none;
     }
-   
+    .icon__label{
+        font-size: 44px;
+        padding-top:4px;
+        margin-right: 8px;
+        @include pad{
+            font-size: 22px;
+            padding-top:2px;
+            margin-right: 0;
+        }
+    }
+    h4{
+        font-size: 32px;
+        @include pad{
+            font-size: 16px;
+        }
+    }
+    .tag__list{
+        gap:4px 24px;
+        flex-wrap: wrap;
+        li{
+            display: flex;
+            width: 100%;
+            font-size: 24px;
+            @include pad{
+                font-size: 16px;
+            }
+            p{
+                color:$primary;
+                &:nth-child(1){
+                    margin-right: 16px;
+                }
+            }
+        }
+        
+    }
 }
+
+// aside end

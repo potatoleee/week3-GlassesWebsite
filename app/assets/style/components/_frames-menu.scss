@@ -1,5 +1,8 @@
 .frames__menu{
-
+    @include phone{
+        padding: 0 0;
+    }
+     
     li{
         position: relative;
         &:nth-child(1){
@@ -17,18 +20,26 @@
         width: 33.33%;
         text-align: center;
         border-right: 1px solid #DCDCDC;
-        // border-top: 1px solid #DCDCDC;
-        // border-bottom: 1px solid #DCDCDC;
+       
     }
     a{
         color:$black-900;
         font-size: 32px;
         padding: 24px 0px;
-
+         @include pad{
+            font-size: 24px;
+            padding: 16px 0;
+         } 
+         @include phone{
+            font-size: 16px;
+         }  
     }
 }
 
 .frames__menu--sunGlasses{
+    @include phone{
+        padding: 0 0;
+    }
     li{
         position: relative;
         &:nth-child(2){
@@ -46,36 +57,70 @@
         width: 33.33%;
         text-align: center;
         border-right: 1px solid #DCDCDC;
-        // border-top: 1px solid #DCDCDC;
-        // border-bottom: 1px solid #DCDCDC;
     }
     a{
         color:$black-900;
         font-size: 32px;
         padding: 24px 0px;
-
-    }
-}
-
-@media (max-width:992px) {
-    .frames__menu, .frames__menu--sunGlasses{
-        a{
+        @include pad{
             font-size: 24px;
-            padding: 16px 0px;
+            padding: 16px 0;
         }
-    }
-}
-@media (max-width:767px) {
-    .frames__menu, .frames__menu--sunGlasses{
-        padding: 0 0;
-        a{
+        @include phone{
             font-size: 16px;
         }
     }
 }
-.frames__header{
-    img{
-        width: 50%;
+
+
+.frames__header__optical,.frames__header__sunGlasses{
+    height: 296px;
+    @include phone{
+        height: 136px;
     }
+   
+}
+.header__optical__img--left{
+    background-image: url("../images/product-header-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @include pad{
+        background-image: url("../images/product-header-sm-1.png");
+    }
+    
+}
+.header__optical__img--right{
+    background-image: url("../images/product-header-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @include pad{
+        background-image: url("../images/product-header-sm-2.png");
+    }
+}
+.header__sunGlasses__img--left{
+    background-image: url("../images/product-header-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @include pad{
+        background-image: url("../images/product-header-sm-3.png");
+    }
+    
+}
+.header__sunGlasses__img--right{
+    background-image: url("../images/product-header-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @include pad{
+        background-image: url("../images/product-header-sm-4.png");
+    }
+    
 }
 

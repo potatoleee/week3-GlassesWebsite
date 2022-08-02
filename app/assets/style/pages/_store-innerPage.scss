@@ -5,35 +5,44 @@
         gap: 24px 0px;
     }
     .store__item{
-        width: initial;
-        // width: 41%;
+        // width: initial;
+        width: 40.58642%;
         @include pad{
             display: flex;
-            gap: 0px 24px;
-
+            width: 100%;
+            gap: 0 24px;
+        }
         @include phone{
             flex-direction: column;
-            gap: 0px;
         }
-
-        img{
+        .store__img{
+            background-image: url("../images/storepage-1.png");
+            background-size: cover;
+            background-position: center;
+            height: 224px;
             @include pad{
-            width:calc( (100% - 24px) / 2);
-            }
+                width:calc((100%-24px) / 2);
+            }  
             @include phone{
                 width: 100%;
             }
         }
+        .store__content{
+            @include pad{
+            width:calc((100%-24px) / 2);
+        }
+            @include phone{
+                width: 100%;
+            }
+        }
+      
+     }
+     .store__map{
+        width: 57.561728%;
+        @include pad{
+            width: 100%;
         }
     }
-    // .store__img{
-    //     background-image: url("../images/storepage-1.png");
-    //     background-size: cover;
-    //     background-position: center;
-    //     height: 224px;
-       
-    // }
-    // .store__map{
-    //     width: 58%;
-    // }
-}
+ }
+
+
