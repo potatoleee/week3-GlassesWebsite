@@ -158,6 +158,7 @@
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
+    background-attachment: fixed;
     @include pad{
         background-image: url(../images/index-bg-sm.png);
     }
