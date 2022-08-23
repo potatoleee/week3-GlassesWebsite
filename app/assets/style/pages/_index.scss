@@ -159,12 +159,13 @@
     background-position: center;
     padding-bottom: 80px;
     background-attachment: fixed;
+    padding-top: 80px;
     @include pad{
         background-image: url(../images/index-bg-sm.png);
     }
      .coBranding__title{
-        padding-top: 80px;
-        padding-bottom: 48px;
+      
+        margin-bottom: 48px;
         color:$white;
         @include phone{
             font-size: 6.5vmin;

@@ -1,4 +1,9 @@
 .logo{
+  h1{
+    transition: all .5s;
+    &:hover{
+      opacity: 0.5;
+    }
     a{
       display: block;
       width: 80px;
@@ -13,6 +18,7 @@
       white-space: nowrap;
       padding: 16px 0px;
     }
+  }
   }
   nav{
     display: flex;
